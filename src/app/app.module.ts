@@ -11,6 +11,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import { AppComponent } from './app.component';
 import 'hammerjs';
 import { MenuComponent } from './menu/menu.component';
+import { DishdetailComponent } from './dishdetail/dishdetail.component';
 
 //Ng module decorator
 //decorator is a function that modified JS cleasses
@@ -20,7 +21,8 @@ import { MenuComponent } from './menu/menu.component';
   //declares the view classes that belong to this module
   declarations: [
     AppComponent,
-    MenuComponent
+    MenuComponent,
+    DishdetailComponent
   ],
   // import modules to be used
   imports: [
