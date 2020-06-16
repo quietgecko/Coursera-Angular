@@ -8,6 +8,7 @@ if (environment.production) {
   enableProdMode();
 }
 
+// app module is typical name of root module in anglar
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err));
 
