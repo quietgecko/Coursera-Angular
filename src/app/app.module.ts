@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import 'hammerjs';
 import { MenuComponent } from './menu/menu.component';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
+import { DishService } from './services/dish.service';
 
 //Ng module decorator
 //decorator is a function that modified JS cleasses
@@ -35,8 +36,11 @@ import { DishdetailComponent } from './dishdetail/dishdetail.component';
     MatCardModule,
     MatButtonModule
   ],
+  
   //provide all the services
-  providers: [],
+  providers: [
+    DishService
+  ],
 
   //bootstrap the root component
   bootstrap: [AppComponent]
