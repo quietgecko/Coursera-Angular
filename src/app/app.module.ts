@@ -13,6 +13,8 @@ import 'hammerjs';
 import { MenuComponent } from './menu/menu.component';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
 import { DishService } from './services/dish.service';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 //Ng module decorator
 //decorator is a function that modified JS cleasses
@@ -23,7 +25,9 @@ import { DishService } from './services/dish.service';
   declarations: [
     AppComponent,
     MenuComponent,
-    DishdetailComponent
+    DishdetailComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   // import modules to be used
   imports: [
