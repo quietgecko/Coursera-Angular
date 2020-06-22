@@ -13,7 +13,7 @@ export class ContactComponent implements OnInit {
   feedbackForm: FormGroup;
   feedback: Feedback;
   contactType = ContactType;
-  @ViewChild('fform') feedbackFormDirective;
+  //@ViewChild('fform') feedbackFormDirective;
 
   formErrors = {
     'firstname': '',
@@ -99,7 +99,8 @@ export class ContactComponent implements OnInit {
       contacttype:  'None',
       message: ''
     });
-    this.feedbackFormDirective.resetForm();
+    //this.feedbackFormDirective.resetForm();
+    this.feedbackForm.reset()
   }
 
 }

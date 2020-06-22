@@ -41,7 +41,8 @@
 
     <p> {{feedbackForm.value | json }} {{ feedbackForm.status | json }} </p>
 
-    <form novalidate [formGroup]="feedbackForm" #fform="ngForm" (ngSubmit)="onSubmit()">
+    <!--#fform="ngForm"-->
+    <form novalidate [formGroup]="feedbackForm"  (ngSubmit)="onSubmit()">
       <p>
         <mat-form-field class="half-width">
           <input matInput formControlName="firstname"
